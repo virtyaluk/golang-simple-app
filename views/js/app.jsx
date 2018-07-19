@@ -78,8 +78,8 @@ class Home extends React.Component {
     return (
       <div className="container">
         <div className="col-xs-8 col-xs-offset-2 jumbotron text-center">
-          <h1>Jokeish</h1>
-          <p>A load of Dad jokes xD</p>
+          <h1>Jokes</h1>
+          <p>A load of Dark Humor jokes :D</p>
           <p>Sign in to get access </p>
           <a onClick={this.authenticate} className="btn btn-primary btn-lg btn-login btn-block">Sign In</a>
         </div>
@@ -105,7 +105,7 @@ class LoggedIn extends React.Component {
         <div className="col-lg-12">
           <br />
           <span className="pull-right"><a onClick={this.logout}>Log out</a></span>
-          <h2>Jokeish</h2>
+          <h2>Jokes</h2>
           <p>Let's feed you with some funny Jokes!</p>
           <div className="row">
             {this.state.jokes.map((joke, i) => <Joke key={i} joke={joke} />)}

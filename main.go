@@ -38,15 +38,20 @@ type Joke struct {
 	Joke  string `json:"joke" binding:"required"`
 }
 
-/** we'll create a list of jokes */
+// taken from here http://jokes.cc.com/funny-dark-humor
 var jokes = []Joke{
-	Joke{1, 0, "Did you hear about the restaurant on the moon? Great food, no atmosphere."},
-	Joke{2, 0, "What do you call a fake noodle? An Impasta."},
-	Joke{3, 0, "How many apples grow on a tree? All of them."},
-	Joke{4, 0, "Want to hear a joke about paper? Nevermind it's tearable."},
+	Joke{1, 0, "What's a Jewish mobster? 'I'm going to break the legs of your therapist.'"},
+	Joke{2, 0, "I'll tell you how bad it was in Los Angeles during the riots -- people were actually flooding into Tijuana. That's how bad it was."},
+	Joke{3, 0, "Am I dead, Angel? Because this must be Heaven. Of course, I am a machine and therefore do not experience death."},
+	Joke{4, 0, "The number two cause of death among teenagers in America today are guns. You know the number one cause of death? Not having a gun."},
 	Joke{5, 0, "I just watched a program about beavers. It was the best dam program I've ever seen."},
-	Joke{6, 0, "Why did the coffee file a police report? It got mugged."},
-	Joke{7, 0, "How does a penguin build it's house? Igloos it together."},
+	Joke{6, 0, "In honor of the recent death of coach Joe Paterno, I think we should all take 12 years of silence."},
+	Joke{7, 0, "Bill Gates is so rich he hired cancer to kill Steve Jobs."},
+	Joke{8, 0, "My aunt died, God bless her, at a ripe old age of 104. We called her Aunt Tique."},
+	Joke{9, 0, "My grandmother, 86 years old, just entered medical school. She's a cadaver, and she is living death to the fullest."},
+	Joke{10, 0, "If at first you don't suceed, sky diving isn't for you."},
+	Joke{11, 0, "I got a cousin who's a psychotic with low self-esteem. He only wants to assassinate the vice president."},
+	Joke{12, 0, "If a schizophrenic threatens to commit suicide, is it considered a hostage situation?"},
 }
 
 var jwtMiddleWare *jwtmiddleware.JWTMiddleware
